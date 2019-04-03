@@ -35,5 +35,25 @@ const Say3 = (person:Human):string => {
 };
 console.log(Say3(person));
 
+//기본 4 
+//Class 를 이용한 선언
+class Human {
+    //private은 Human안에서만 사용 가능 
+    public name : string;
+    public age : number;
+    public gender : string;
+    constructor(name:string, age:number, gender:string){
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+}
+// lynn에 대한 새로운 정의를 미리 만들어둔 class를 통해 간략히 표현 가능 
+const lynn = new Human("Lynn", 18, "female");
+
+const Say4 = (person:Human):string => {
+    return `Hi ${person.name}, info is ${person.age} and ${person.gender} in interface `
+};
+console.log(Say4(lynn));
 
 export {};
