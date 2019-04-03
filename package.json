@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/guswo5580/TypeScript_First#readme",
   "dependencies": {
+    "crypto-js": "^3.1.9-1",
     "tsc-watch": "^2.1.2",
     "typescript": "^3.4.1"
   }
