@@ -17,4 +17,23 @@ const Say2 = (name:string, age:number, gender:string):string => {
 };
 console.log(Say2(name, age, gender));
 
+//기본 3 
+//Object를 이용할 때 , interface 속성을 같이 이용해주자 
+interface Human {
+    name : string;
+    age : number;
+    gender : string;
+}
+const person = {
+    name : "HJ",
+    age : 26,
+    gender : "male"
+};
+//interface에서 설정한 것을 바탕으로 전달하는 object만 변경해도 같아진다 
+const Say3 = (person:Human):string => {
+    return `Hi ${person.name}, info is ${person.age} and ${person.gender} in interface `
+};
+console.log(Say3(person));
+
+
 export {};
